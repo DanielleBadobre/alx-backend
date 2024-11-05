@@ -1,9 +1,11 @@
 #!/bin/bash/env python3
 """ 0-app """
-from flask import flask, render_template
+from flask import Flask, render_template
 
 
 app = Flask(__name__)
+
+
 @app.route('/')
 def index():
     """simple flask app"""

@@ -8,6 +8,8 @@ app = Flask(__name__)
 
 @app.route('/')
 app.url_map.strict_slashes = False
+
+
 def index():
     """simple flask app"""
     return render_template('0-index.html')
